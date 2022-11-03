@@ -1,0 +1,62 @@
+1.var a=45;
+            var b=56;
+            var sum;
+            if (a>50 && b>50)
+            {
+                sum = a + b;
+                console.log(sum);
+            }
+            else
+            {
+                console.log("Ededler uygun deyil!");
+            }
+
+
+
+
+
+
+
+3.
+        var sum=0;
+        var count=0
+        var product=[
+            {
+                Id:1,
+                Name:"product1",
+                Price:25,
+                
+
+            },
+            {
+                Id:2,
+                Name:"product2",
+                Price:30,
+
+            },
+            {
+                Id:3,
+                Name:"product3",
+                Price:40,
+
+            },
+            {
+                Id:4,
+                Name:"product4",
+                Price:25,
+
+            },
+            { 
+                Id:5,
+                Name:"product5",
+                Price:35,
+
+            }
+        ]
+        for(var i = 0; i <product.length; i++)
+        {
+            if((product[i].Id)%2!=0){
+                count++;
+                sum+=product[i].Price;
+            }
+        }console.log(sum/count)

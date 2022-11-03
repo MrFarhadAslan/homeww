@@ -1,0 +1,50 @@
+1.
+	    int a=Convert.ToInt32(Console.ReadLine());
+            int b=Convert.ToInt32(Console.ReadLine());
+            int sum;
+            if (a>50 && b>50)
+            {
+                sum = a + b;
+                Console.WriteLine(sum);
+            }
+            else
+            {
+                Console.WriteLine("Ededler uygun deyil!");
+            }
+
+
+
+
+ 2.         int[] num = { 1, 3, 5, 4, 3 };
+            int[] use_num = new int[num.Length];
+            for (int i = 0; i < num.Length; i++)
+            {
+                int count = 0;
+                int temp = 0;
+
+                for (int l = 0; l < use_num.Length; l++)
+                {
+                    
+                    if (use_num[l] == num[i])
+                    {
+                        temp++;
+                    }
+                }
+                if (temp == 0)
+                {
+                    for (int k = 0; k < num.Length; k++)
+                    {
+                        if (num[i] == num[k])
+                        {
+                            count++;
+                        }
+                    }
+                    use_num[i] = num[i];
+                    Console.WriteLine(num[i] + " Ededi " + count + "denedir");
+                }
+
+	***PS.  use_num array'ine yoxladığımız ədədləri atırıq və hər dövrdə ədədin         use_num da olub olmadığını yoxlayırıq ki bir ədədi iki dəfə yoxlamasın.
+
+
+
+
